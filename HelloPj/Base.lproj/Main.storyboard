@@ -21,17 +21,19 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s52-JA-VFL">
                                         <rect key="frame" x="0.0" y="0.0" width="380" height="369"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwj-fR-Vr9">
                                         <rect key="frame" x="0.0" y="377" width="380" height="369"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <color key="tintColor" red="0.80784313730000001" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.92156862750000001" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.80784313730000001" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5Eq-iM-Y05" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="624-qO-Tj9"/>
                             <constraint firstItem="5Eq-iM-Y05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="LNr-nk-yFd"/>
@@ -40,6 +42,10 @@
                             <constraint firstItem="5Eq-iM-Y05" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X1E-8O-cpB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="view1" destination="s52-JA-VFL" id="g9j-rl-D0I"/>
+                        <outlet property="view2" destination="bwj-fR-Vr9" id="h7Y-9i-Byb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,14 +53,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
